@@ -40,5 +40,6 @@ Sleep for 1 minute (60 seconds)</I><BR>
   The results in CSV format can be found on your desktop in the Airtags folder!
     
  To see all my Airtag adventures check out my channel at https://www.youtube.com/c/AirtagAlex
-    If this script was of use to you a referal in your video or project would be highly appreiciated. 
+    
+ If this script was of use to you a referal in your video or project would be highly appreiciated. 
     
