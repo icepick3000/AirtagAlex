@@ -2,6 +2,8 @@
 Get all metadata from the Airtags (lat, lon, geocoding information, precision range, battery status).
 This script is a very basic script to write the data to a CSV for processing in Excel or Numbers. I am sure many rewrites will be done by other folks but anyone with some programming experience will have a good starting point with this script. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9VQ-_ztG9aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Steps to get this script to work (for Noobs);
 
 Create a folder on your desktop called <i>Airtags</i> (case sensitive)<BR>
