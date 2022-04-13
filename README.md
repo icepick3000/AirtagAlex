@@ -3,6 +3,7 @@ Get all metadata from the Airtags (lat, lon, geocoding information, precision ra
 This script is a very basic script to write the data to a CSV for processing in Excel or Numbers. I am sure many rewrites will be done by other folks but anyone with some programming experience will have a good starting point with this script. 
 
 Click below to see the youtube video and a step by step guide;
+
 [![Click here for the youtube video](https://img.youtube.com/vi/9VQ-_ztG9aM/0.jpg)](https://www.youtube.com/watch?v=9VQ-_ztG9aM)
 
 
