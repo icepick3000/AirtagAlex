@@ -19,7 +19,7 @@ do
 	then
 	echo "Airtags.csv does not exist, creating one"
 	#Header for the CSV file (currently set up to append to the file)
-	echo datetime,serialnumber,producttype,productindentifier,vendoridentifier,antennapower,systemversion,batterystatus,locationpositiontype,locationlatitude,locationlongitude,locationtimestamp,locationverticalaccuracy,locationhorizontalaccuracy,locationfloorlevel,locationaltitude,locationisinaccurate,locationisold,locationfinished,addresslabel,addressstreetaddress,addresscountrycode,addressstatecode,addressadministrativearea,addressstreetname,addresslocality,addresscountry,addressareaofinteresta,addressareaofinterestb,batterystatus >> ~/Desktop/Airtags/Airtags.csv
+	echo datetime,name,serialnumber,producttype,productindentifier,vendoridentifier,antennapower,systemversion,batterystatus,locationpositiontype,locationlatitude,locationlongitude,locationtimestamp,locationverticalaccuracy,locationhorizontalaccuracy,locationfloorlevel,locationaltitude,locationisinaccurate,locationisold,locationfinished,addresslabel,addressstreetaddress,addresscountrycode,addressstatecode,addressadministrativearea,addressstreetname,addresslocality,addresscountry,addressareaofinteresta,addressareaofinterestb,batterystatus >> ~/Desktop/Airtags/Airtags.csv
 	fi
 
 
@@ -35,6 +35,7 @@ do
 	datetime=`date +"%Y-%m-%d  %T"`
 
 	serialnumber=`cat ~/Desktop/Airtags/Items.data | jq ".[$j].serialNumber"`
+	name=`cat ~/Desktop/Airtags/Items.data | jq ".[$j].name"`
 	producttype=`cat ~/Desktop/Airtags/Items.data | jq ".[$j].productType.type"`
 	productindentifier=`cat ~/Desktop/Airtags/Items.data | jq ".[$j].productType.productInformation.productIdentifier"`
 	vendoridentifier=`cat ~/Desktop/Airtags/Items.data | jq ".[$j].productType.productInformation.vendorIdentifier"`
@@ -66,7 +67,7 @@ do
 
 	echo "Write the data to the Airtags.csv file"
 
-	echo $datetime,$serialnumber,$producttype,$productindentifier,$vendoridentifier,$antennapower,$systemversion,$batterystatus,$locationpositiontype,$locationlatitude,$locationlongitude,$locationtimestamp,$locationverticalaccuracy,$locationhorizontalaccuracy,$locationfloorlevel,$locationaltitude,$locationisinaccurate,$locationisold,$locationfinished,$addresslabel,$addressstreetaddress,$addresscountrycode,$addressstatecode,$addressadministrativearea,$addressstreetname,$addresslocality,$addresscountry,$addressareaofinteresta,$addressareaofinterestb,$batterystatus >> ~/Desktop/Airtags/Airtags.csv
+	echo $datetime,$name,$serialnumber,$producttype,$productindentifier,$vendoridentifier,$antennapower,$systemversion,$batterystatus,$locationpositiontype,$locationlatitude,$locationlongitude,$locationtimestamp,$locationverticalaccuracy,$locationhorizontalaccuracy,$locationfloorlevel,$locationaltitude,$locationisinaccurate,$locationisold,$locationfinished,$addresslabel,$addressstreetaddress,$addresscountrycode,$addressstatecode,$addressadministrativearea,$addressstreetname,$addresslocality,$addresscountry,$addressareaofinteresta,$addressareaofinterestb,$batterystatus >> ~/Desktop/Airtags/Airtags.csv
 
 
 	done
