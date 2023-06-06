@@ -8,38 +8,45 @@ Click below to see the youtube video and a step by step guide;
 
 
 
-Steps to get this script to work (for Noobs);
+## Instructions
 
-Create a folder on your desktop called <i>Airtags</i> (case sensitive)<BR>
-Install brew (<A HREF="wwww.brew.sh" TARGET=new>www.brew.sh</A>)<BR>
-  Install the jq utility (<i>brew install jq</I>)<BR>
-  Change the directory to the newly created Airtags folder by typing <i>cd ~/Desktop/Airtags</I><BR>
-  Clone this repo by typing <i>git clone https://github.com/icepick3000/AirtagAlex.git</I><BR>
-  Go into the repo directory by typing <i>cd ~/Desktop/Airtags/AirtagAlex</I><BR>
-  Make the shell file executable by typing <I>chmod 700 AirtagAlex.sh</I><BR>
+* Create a folder on your desktop called <i>Airtags</i> (case sensitive)
+* Install brew (<A HREF="wwww.brew.sh" TARGET=new>www.brew.sh</A>)
+* Install the jq utility (`brew install jq`)
+* Change the directory to the newly created Airtags folder by typing `cd ~/Desktop/Airtags`
+* Clone this repo by typing `git clone https://github.com/icepick3000/AirtagAlex.git`
+* Go into the repo directory by typing `cd ~/Desktop/Airtags/AirtagAlex`
+* Make the shell file executable by typing `chmod 700 AirtagAlex.sh`
   
-  You can start the script by typing;
+You can start the script by typing;
   
-  <B><I>./AirtagAlex.sh</I></B>
+`./AirtagAlex.sh`
   
-  The output will look something like this;<BR>
-  <I>Create a copy of the Items.data file to prevent changes while the script is running<BR>
-Check if Airtags.csv exists<BR>
-Check how many Airtags to process<BR>
-Number of Airtags to process:       4<BR>
-Processing airtag number 0<BR>
-Write the data to the Airtags.csv file<BR>
-Processing airtag number 1<BR>
-Write the data to the Airtags.csv file<BR>
-Processing airtag number 2<BR>
-Write the data to the Airtags.csv file<BR>
-Processing airtag number 3<BR>
-Write the data to the Airtags.csv file<BR>
-Sleep for 1 minute (60 seconds)</I><BR>
+The output will look something like this:
+
+```
+Create a copy of the Items.data file to prevent changes while the script is running
+Check if Airtags.csv exists
+Check how many Airtags to process
+Number of Airtags to process:       4
+Processing airtag number 0
+Write the data to the Airtags.csv file
+Processing airtag number 1
+Write the data to the Airtags.csv file
+Processing airtag number 2
+Write the data to the Airtags.csv file
+Processing airtag number 3
+Write the data to the Airtags.csv file
+Sleep for 1 minute (60 seconds)
+```
   
-  The results in CSV format can be found on your desktop in the Airtags folder!
+The results in CSV format can be found on your desktop in the Airtags folder!
     
- To see all my Airtag adventures check out my channel at https://www.youtube.com/c/AirtagAlex
+To see all my Airtag adventures check out my channel at https://www.youtube.com/c/AirtagAlex
     
- If this script was of use to you a referal in your video or project would be highly appreiciated. 
-    
+If this script was of use to you a referal in your video or project would be highly appreciated. 
+
+## Troubleshooting
+If you receive an `operation not permitted` error when running the script, please ensure that `Terminal` has `Full Disk Access` in the `Privacy & Security` settings in macOS.
+
+This is because of the file permissions on the `Items.data` file. Please propose an alternative or better way to do this if it's possible.
