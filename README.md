@@ -7,18 +7,14 @@ Click below to see the youtube video and a step by step guide;
 [![Click here for the youtube video](https://img.youtube.com/vi/9VQ-_ztG9aM/0.jpg)](https://www.youtube.com/watch?v=9VQ-_ztG9aM)
 
 
-
 ## Instructions
 
-* Create a folder on your desktop called <i>Airtags</i> (case sensitive)
-* Install brew (<A HREF="wwww.brew.sh" TARGET=new>www.brew.sh</A>)
+* Install brew (https://brew.sh/)
 * Install the jq utility (`brew install jq`)
-* Change the directory to the newly created Airtags folder by typing `cd ~/Desktop/Airtags`
 * Clone this repo by typing `git clone https://github.com/icepick3000/AirtagAlex.git`
-* Go into the repo directory by typing `cd ~/Desktop/Airtags/AirtagAlex`
 * Make the shell file executable by typing `chmod 700 AirtagAlex.sh`
   
-You can start the script by typing;
+You can start the script by typing:
   
 `./AirtagAlex.sh`
   
@@ -40,7 +36,7 @@ Write the data to the Airtags.csv file
 Sleep for 1 minute (60 seconds)
 ```
   
-The results in CSV format can be found on your desktop in the Airtags folder!
+The results in CSV format can be found in the same directory!
     
 To see all my Airtag adventures check out my channel at https://www.youtube.com/c/AirtagAlex
     
