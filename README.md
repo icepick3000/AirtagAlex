@@ -1,4 +1,7 @@
 # AirtagAlex
+
+!!This script will NOT work on MAC's that have a Sonoma version thats newer then 14.3.1. Apple started encrypting the data after this version!!
+
 Get all metadata from the Airtags (lat, lon, geocoding information, precision range, battery status).
 This script is a very basic script to write the data to a CSV for processing in Excel or Numbers. I am sure many rewrites will be done by other folks but anyone with some programming experience will have a good starting point with this script. 
 
